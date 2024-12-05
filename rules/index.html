@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlgoPath</title>
+  <link rel="stylesheet" href="../assets/style/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header>
+    <a href="/register">
+      <div class="img-cont"><img src="/assets/images/logo.svg" alt="logo"></div>
+    </a>
+  </header>
+  <main class="rules">
+    <h1>Rules</h1>
+    <p><b>Number of players :</b> 1 - 4</p>
+    <p><b>Game time :</b> at least 5 minutes for each level</p>
+    <p><b>Equipments :</b> the game board, at least one whiteboard marker, a character, a flag, 3 monster tokens, 3 coin
+      tokens, 30 variable tokens, 20 orange action cards, 16 green action cards, 6 blue action cards, 4 red action cards
+    </p>
+    <p class="title">Setup :</p>
+    <ul>
+      <li>Place the board at the center of the table, with a pile of cards for each action (move forward, turn, repeat,
+        attack) next to it.</li>
+      <li>
+        Scan the QR code on the board to access the app, you will enter all the players' names to keep track of the
+        points, and will be asked questions for the quiz.
+      </li>
+      <li>
+        Select a level blueprint on the app and replicate it on the board using the marker, place the character and the
+        flag on the board as well. If you have some monster and coin tokens, place them in their designated squares, if
+        you don't have any, you can draw them using a marker.
+      </li>
+      <li>Choose a game mode on the app : speedrun mode, or greedy mode.</li>
+    </ul>
+    <p class="title">How to play :</p>
+    <ul>
+      <li>The player who owns the phone will play first, and the game plays clockwisely (same way a clock hand turns).
+      </li>
+      <li><b>Select a question :</b></li>
+      <ul>
+        <li>blue questions are easier but only give one action card,</li>
+        <li>red questions are harder but give two action cards.</li>
+      </ul>
+      <li>
+        If the player answers correctly to the question, they can draw one card, and one additional card if the question
+        was red.
+      </li>
+      <li><b>Then, the player can either :</b></li>
+      <ul>
+        <li>end their turn, and the player on their left can start their turn,</li>
+        <li>submit their algorithm to reach the flag</li>
+      </ul>
+      <li>If a player successfully reaches the flag, they earn 3 points and the board can be wiped to start a new level.
+      </li>
+    </ul>
+    <p class="title">How to submit the algorithm :</p>
+    <ul>
+      <li>The current player gets to choose which way the character faces when starting his algorithm.</li>
+      <li>The current player places their action cards next to the board, from top to bottom, in order, so that the
+        actions make
+        the character reach the flag. The actions are read from top to bottom, from left to right. The current player is
+        free to
+        use as many variable tokens as they need.</li>
+    </ul>
+    <p class="title">How to win :</p>
+    <ul>
+      <li><b>In speedrun mode :</b></li>
+      <ul>
+        <li>
+          Be the first to reach the flag 5 times to win. Once a player reaches the flag, the board is wiped and a new
+          level can be
+          drawn on the board.
+        </li>
+      </ul>
+      <li><b>In greedy mode :</b></li>
+      <ul>
+        <li>Be the first to reach 20 points to win.</li>
+        <li>Points chart :</li>
+        <ul>
+          <li>Reaching the flag : 3 points</li>
+          <li>Beating a monster : 2 points</li>
+          <li>Collecting a coin : 1 point</li>
+        </ul>
+        <li><b>Specific actions :</b></li>
+        <ul>
+          <li>To beat a monster, you have to use an attack action card, facing the monster</li>
+          <li>To collection a coin, the character has to walk on the coin tile</li>
+        </ul>
+      </ul>
+    </ul>
+    <p class="title">Action cards :</p>
+    <ul>
+      <li><b>Orange cards :</b> move N blocks forward, where N is the variable token</li>
+      <li><b>Green cards :</b> rotate N degrees to the right, where N is the variable token (N can only be 90, 180, or
+        270)
+      </li>
+      <li><b>Blue cards :</b> repeat block N times, where N is the variable token</li>
+      <ul>
+        <li>the block is the group of action cards under this card, you have to indent your block to the right for it to
+          be repeated (see example below)</li>
+      </ul>
+      <li><b>Red cards :</b> attack the tile in front of the character</li>
+    </ul>
+    <p class="note"><b>Note :</b> players can only submit their algorithm during their turn</p>
+    <p class="note"><b>Note :</b> the character can never pass a wall, even if it has remaining steps to move. In this
+      case, the character stops moving forward and the next action card is triggered</p>
+    <p class="note"><b>Tip :</b> turning 270 degrees to the right is the same as turning 90 degrees to the left</p>
+    <p class="note"><b>About the repeat action card :</b> </p>
+    <div class="img-cont"><img src="../assets/images/example-1.png" alt="example"></div>
+    <p>This algorithm uses a <b>repeat card</b>, the indented cards will be executed as many times as written the
+      variable token on the repeat card</p>
+    <p>This algorithm above would be the same as the one below</p>
+    <div class="img-cont"><img src="../assets/images/example-2.png" alt="example"></div>
+    <a href="/register" class="button-cta-accent">Start playing</a>
+  </main>
+</body>
+
+</html>

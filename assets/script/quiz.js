@@ -4,12 +4,14 @@ const players = localStorage.getItem("players")
 
 let currentPlayer = 0;
 
-const playerPlaceholder = document.querySelector(".currentPlayer");
+const playerPlaceholders = document.querySelectorAll(".currentPlayer");
 const nextPlayerPlaceholder = document.querySelector(".nextPlayer");
 // console.log(nextPlayerPlaceholder);
 
 function renderCurrentPlayer() {
-	playerPlaceholder.textContent = players[currentPlayer];
+	playerPlaceholders.forEach((playerPlaceholder) => {
+		playerPlaceholder.textContent = players[currentPlayer];
+	});
 }
 
 function getNextPlayer() {

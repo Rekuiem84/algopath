@@ -38,3 +38,10 @@ window.addEventListener("DOMContentLoaded", () => {
 		});
 	}
 });
+
+// redirect to the register page if no players are added
+const players = JSON.parse(localStorage.getItem("players") || "[]");
+console.log(players.length);
+if (players.length === 0) {
+	window.location.href = "/register";
+}

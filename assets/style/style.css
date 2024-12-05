@@ -169,6 +169,12 @@ header .img-cont {
   cursor: pointer;
   margin-left: 2em;
 }
+.register .buttons-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 
 .play {
   font-size: 1.25rem;
@@ -178,10 +184,19 @@ header .img-cont {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 .game-modes .gamemode.active {
   outline: 3px solid currentColor;
+}
+.game-modes .button-cta-accent {
+  flex: 1;
+  max-width: 25ch;
+  margin-top: 0;
+  margin-inline: 0;
 }
 
 .modes-rules > div {
@@ -213,6 +228,7 @@ header .img-cont {
   margin-top: 2rem;
 }
 .maps .difficulty summary {
+  cursor: pointer;
   width: fit-content;
   background: #ffffff;
   color: #282f67;
@@ -225,6 +241,10 @@ header .img-cont {
   overflow: hidden;
   margin-top: 2.5rem;
   max-width: 450px;
+  background: #ffffff;
+}
+.maps .difficulty .img-cont img {
+  display: block;
 }
 .maps .difficulty p {
   font-weight: bold;
@@ -252,6 +272,10 @@ header .img-cont {
   overflow: hidden;
   margin-top: 2.5rem;
   max-width: 450px;
+  background: #ffffff;
+}
+.see-map .img-cont img {
+  display: block;
 }
 .see-map p {
   margin-top: 1rem;
@@ -306,12 +330,13 @@ header .img-cont {
 }
 .quiz .propositions {
   margin-top: 1rem;
-  width: max-content;
   margin-inline: auto;
+  padding-inline: 1rem;
+  list-style: upper-latin;
 }
 .quiz .answer {
   font-size: 1.25rem;
-  margin-top: 0.25em;
+  margin-top: 0.5em;
 }
 .quiz .button-cta {
   margin-top: 2rem;
@@ -350,6 +375,26 @@ select {
 }
 select:focus {
   outline: none;
+}
+
+.rules p {
+  margin-top: 1.5em;
+  font-size: 1.25rem;
+}
+.rules li {
+  margin-top: 0.75em;
+  font-size: 1.25rem;
+}
+.rules .title {
+  font-weight: bold;
+}
+.rules ul {
+  padding-left: 1.5em;
+  list-style-type: square;
+}
+.rules .img-cont {
+  max-width: 400px;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

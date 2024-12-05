@@ -2,6 +2,7 @@ const registerDoc = document.querySelector(".register");
 const nameInput = registerDoc.querySelector("#name");
 const form = registerDoc.querySelector("form");
 const playersList = document.querySelector(".players-list");
+const playLink = document.querySelector("[data-link='play']");
 
 const players = [];
 
@@ -14,6 +15,9 @@ form.addEventListener("submit", (e) => {
 		renderPlayers();
 		nameInput.value = "";
 		console.log(JSON.parse(localStorage.getItem("players")));
+	}
+	if (players.length > 0) {
+		playLink.setAttribute("href", "/play");
 	}
 });
 

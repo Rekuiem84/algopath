@@ -77,6 +77,12 @@
 		cursor: pointer;
 		margin-left: 2em;
 	}
+	.buttons-cont {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+	}
 }
 // Game modes
 .play {
@@ -86,10 +92,19 @@
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	margin-top: 2rem;
 
 	.gamemode.active {
 		outline: 3px solid currentColor;
+	}
+	.button-cta-accent {
+		flex: 1;
+		max-width: 25ch;
+		margin-top: 0;
+		margin-inline: 0;
 	}
 }
 .modes-rules > div {
@@ -119,6 +134,7 @@
 		margin-top: 2rem;
 
 		summary {
+			cursor: pointer;
 			width: fit-content;
 			background: $color-accent;
 			color: $color-secondary;
@@ -131,6 +147,11 @@
 			overflow: hidden;
 			margin-top: 2.5rem;
 			max-width: 450px;
+			background: $color-accent;
+
+			& img {
+				display: block;
+			}
 		}
 		p {
 			font-weight: bold;
@@ -160,6 +181,11 @@
 		overflow: hidden;
 		margin-top: 2.5rem;
 		max-width: 450px;
+		background: $color-accent;
+
+		& img {
+			display: block;
+		}
 	}
 	p {
 		margin-top: 1rem;
@@ -220,12 +246,13 @@
 	}
 	.propositions {
 		margin-top: 1rem;
-		width: max-content;
 		margin-inline: auto;
+		padding-inline: 1rem;
+		list-style: upper-latin;
 	}
 	.answer {
 		font-size: 1.25rem;
-		margin-top: 0.25em;
+		margin-top: 0.5em;
 	}
 	.button-cta {
 		margin-top: 2rem;
@@ -265,5 +292,26 @@ select {
 
 	&:focus {
 		outline: none;
+	}
+}
+.rules {
+	p {
+		margin-top: 1.5em;
+		font-size: 1.25rem;
+	}
+	li {
+		margin-top: 0.75em;
+		font-size: 1.25rem;
+	}
+	.title {
+		font-weight: bold;
+	}
+	ul {
+		padding-left: 1.5em;
+		list-style-type: square;
+	}
+	.img-cont {
+		max-width: 400px;
+		margin-top: 1rem;
 	}
 }
