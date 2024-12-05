@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlgoPath</title>
+  <link rel="stylesheet" href="../assets/style/style.css">
+  <script src="/assets/script/game.js" defer></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header>
+    <a href="/">
+      <div class="img-cont"><img src="/assets/images/logo.svg" alt="logo"></div>
+    </a>
+  </header>
+  <main class="play">
+    <div class="game-modes">
+      <button class="gamemode button-cta-accent active" data-mode="speedrun">Speedrun mode</button>
+      <button class="gamemode button-cta-accent" data-mode="greedy">Greedy mode</button>
+    </div>
+    <div class="modes-rules">
+      <div data-mode="speedrun" class="active">
+        <p>Be the first to reach the flag 5 times to win.</p>
+      </div>
+      <div data-mode="greedy">
+        <p>Be the first to reach 20 points to win.</p>
+        <p><b>Points chart :</b></p>
+        <ul>
+          <li>Reaching the flag : 3 points</li>
+          <li>Beating a monster : 2 points</li>
+          <li>Collecting a coin : 1 point</li>
+        </ul>
+        <p><b>Specific actions :</b></p>
+        <ul>
+          <li>To beat a monster, you have to use an attack action card, facing the monster</li>
+          <li>To collection a coin, the character has to walk on the coin tile</li>
+        </ul>
+      </div>
+    </div>
+    <div class="additional">
+      <p><b>In both modes :</b></p>
+      <p>Once a player reaches the flag, the board is wiped and a new level can be drawn on the board.</p>
+    </div>
+    <a class="button-cta-accent" href="/maps">Select a map</a>
+  </main>
+</body>
+
+</html>

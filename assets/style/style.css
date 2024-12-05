@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  interpolate-size: allow-keywords;
 }
 
 img,
@@ -49,6 +50,7 @@ h1 {
 }
 
 .button-cta {
+  display: block;
   background: #282f67;
   color: #ffffff;
   border-radius: 100px;
@@ -58,6 +60,25 @@ h1 {
   width: fit-content;
   margin-inline: auto;
   cursor: pointer;
+  text-align: center;
+}
+
+.button-cta-accent {
+  display: block;
+  background: #ffffff;
+  color: #282f67;
+  border-radius: 0.75rem;
+  border: none;
+  font-size: 1.25rem;
+  padding: 0.5em 2em;
+  margin-top: 3rem;
+  width: fit-content;
+  margin-inline: auto;
+  cursor: pointer;
+  text-align: center;
+}
+.button-cta-accent:focus-visible {
+  outline: 3px solid currentColor;
 }
 
 main {
@@ -69,9 +90,13 @@ header {
   padding: 0.5rem;
   background: inherit;
 }
+header a {
+  width: fit-content;
+  display: block;
+  margin-inline: auto;
+}
 header .img-cont {
   width: 4.5rem;
-  margin-inline: auto;
 }
 
 .home {
@@ -143,6 +168,188 @@ header .img-cont {
   font-size: 1.5em;
   cursor: pointer;
   margin-left: 2em;
+}
+
+.play {
+  font-size: 1.25rem;
+}
+
+.game-modes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.game-modes .gamemode.active {
+  outline: 3px solid currentColor;
+}
+
+.modes-rules > div {
+  display: none;
+  margin-top: 3rem;
+  font-size: inherit;
+}
+.modes-rules > div.active {
+  display: block;
+}
+.modes-rules > div > *,
+.modes-rules > div ul li {
+  margin-top: 0.5em;
+}
+.modes-rules > div ul {
+  margin-left: 1em;
+}
+
+.additional,
+.additional p {
+  margin-top: 0.5em;
+}
+
+.maps {
+  font-size: 1.25rem;
+}
+.maps .difficulty {
+  font-size: inherit;
+  margin-top: 2rem;
+}
+.maps .difficulty summary {
+  width: fit-content;
+  background: #ffffff;
+  color: #282f67;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+.maps .difficulty .img-cont {
+  border-radius: 0.5rem;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
+  margin-top: 2.5rem;
+  max-width: 450px;
+}
+.maps .difficulty p {
+  font-weight: bold;
+  font-size: 1.75rem;
+  margin-left: 0.5em;
+}
+.maps .map {
+  margin-top: 2rem;
+  display: block;
+  width: fit-content;
+}
+
+.see-map {
+  font-size: 1.25rem;
+}
+.see-map .map {
+  margin-top: 2rem;
+  width: fit-content;
+  font-size: inherit;
+  margin-inline: auto;
+}
+.see-map .img-cont {
+  border-radius: 0.5rem;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
+  margin-top: 2.5rem;
+  max-width: 450px;
+}
+.see-map p {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-left: 0.5em;
+  text-align: center;
+}
+.see-map p + .button-cta-accent {
+  margin-top: 1rem;
+}
+
+.quiz .cards-cont {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+.quiz .cards-cont .img-cont {
+  position: relative;
+  display: flex;
+  width: min(200px, 100%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.quiz .cards-cont .img-cont img {
+  width: 100%;
+}
+.quiz .cards-cont .img-cont p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+.quiz .player {
+  margin-top: 2rem;
+}
+.quiz .interface {
+  display: none;
+}
+.quiz .interface.active {
+  display: block;
+}
+.quiz .question {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.quiz .propositions {
+  margin-top: 1rem;
+  width: max-content;
+  margin-inline: auto;
+}
+.quiz .answer {
+  font-size: 1.25rem;
+  margin-top: 0.25em;
+}
+.quiz .button-cta {
+  margin-top: 2rem;
+  font-size: inherit;
+}
+.quiz .good-answer {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  visibility: hidden;
+}
+.quiz .good-answer.show {
+  visibility: visible;
+}
+.quiz .next-player {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.quiz .button-cta-accent {
+  margin-top: 2rem;
+}
+
+.form {
+  margin-top: 2rem;
+}
+
+select {
+  background: #282f67;
+  color: #ffffff;
+  font-size: 0.75em;
+  border: none;
+  padding: 0.25em 0.5em;
+  border-radius: 4px;
+}
+select:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

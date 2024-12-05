@@ -2,8 +2,12 @@ header {
 	padding: 0.5rem;
 	background: inherit;
 
+	a {
+		width: fit-content;
+		display: block;
+		margin-inline: auto;
+	}
 	.img-cont {
 		width: 4.5rem;
-		margin-inline: auto;
 	}
 }

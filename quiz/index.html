@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlgoPath</title>
+  <link rel="stylesheet" href="../assets/style/style.css">
+  <script src="/assets/script/quiz.js" defer></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header>
+    <a href="/map">
+      <div class="img-cont"><img src="/assets/images/logo.svg" alt="logo"></div>
+    </a>
+  </header>
+  <main class="quiz">
+    <div class="cards-cont">
+      <button class="img-cont card--easy difficulty" data-difficulty="easy">
+        <img src="../assets/images/card-easy.png" alt="question card">
+        <p>Easy</p>
+      </button>
+      <button class="img-cont card--hard difficulty" data-difficulty="hard">
+        <img src="../assets/images/card-hard.png" alt="question card">
+        <p>Hard</p>
+      </button>
+    </div>
+    <div class="interface">
+      <h1 class="player">It's <span class="currentPlayer"></span>'s turn</h1>
+      <p class="question"></p>
+      <ul class="propositions">
+        <li class="answer"></li>
+        <li class="answer"></li>
+        <li class="answer"></li>
+        <li class="answer"></li>
+      </ul>
+      <button class="see-answer button-cta">Show answer</button>
+      <p class="good-answer"></p>
+      <p class="next-player"><b class="nextPlayer"></b> will answer a question next</p>
+      <button class="next-question button-cta-accent">I'm ready !</button>
+    </div>
+  </main>
+</body>
+
+</html>

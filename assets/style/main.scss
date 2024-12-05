@@ -65,6 +65,7 @@
 			font-size: 1.25rem;
 		}
 	}
+
 	.button-remove {
 		display: block;
 		background: none;
@@ -75,5 +76,194 @@
 		font-size: 1.5em;
 		cursor: pointer;
 		margin-left: 2em;
+	}
+}
+// Game modes
+.play {
+	font-size: 1.25rem;
+}
+.game-modes {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+
+	.gamemode.active {
+		outline: 3px solid currentColor;
+	}
+}
+.modes-rules > div {
+	display: none;
+	margin-top: 3rem;
+	font-size: inherit;
+	&.active {
+		display: block;
+	}
+	& > *,
+	ul li {
+		margin-top: 0.5em;
+	}
+	ul {
+		margin-left: 1em;
+	}
+}
+.additional,
+.additional p {
+	margin-top: 0.5em;
+}
+.maps {
+	font-size: 1.25rem;
+
+	.difficulty {
+		font-size: inherit;
+		margin-top: 2rem;
+
+		summary {
+			width: fit-content;
+			background: $color-accent;
+			color: $color-secondary;
+			border-radius: 0.75rem;
+			padding: 1rem;
+		}
+		.img-cont {
+			border-radius: 0.5rem;
+			border-bottom-right-radius: 0;
+			overflow: hidden;
+			margin-top: 2.5rem;
+			max-width: 450px;
+		}
+		p {
+			font-weight: bold;
+			font-size: 1.75rem;
+			margin-left: 0.5em;
+		}
+	}
+	.map {
+		margin-top: 2rem;
+		display: block;
+		width: fit-content;
+	}
+}
+
+.see-map {
+	font-size: 1.25rem;
+
+	.map {
+		margin-top: 2rem;
+		width: fit-content;
+		font-size: inherit;
+		margin-inline: auto;
+	}
+	.img-cont {
+		border-radius: 0.5rem;
+		border-bottom-right-radius: 0;
+		overflow: hidden;
+		margin-top: 2.5rem;
+		max-width: 450px;
+	}
+	p {
+		margin-top: 1rem;
+		font-weight: bold;
+		font-size: 1.4rem;
+		margin-left: 0.5em;
+		text-align: center;
+
+		& + .button-cta-accent {
+			margin-top: 1rem;
+		}
+	}
+}
+
+.quiz {
+	.cards-cont {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		gap: 1rem;
+
+		.img-cont {
+			position: relative;
+			display: flex;
+			width: min(200px, 100%);
+			background: none;
+			border: none;
+			cursor: pointer;
+
+			& img {
+				width: 100%;
+			}
+
+			& p {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 3rem;
+				font-weight: bold;
+				color: $color-accent;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+	.player {
+		margin-top: 2rem;
+	}
+	.interface {
+		display: none;
+	}
+	.interface.active {
+		display: block;
+	}
+	.question {
+		font-size: 1.5rem;
+		text-align: center;
+		margin-top: 2rem;
+	}
+	.propositions {
+		margin-top: 1rem;
+		width: max-content;
+		margin-inline: auto;
+	}
+	.answer {
+		font-size: 1.25rem;
+		margin-top: 0.25em;
+	}
+	.button-cta {
+		margin-top: 2rem;
+		font-size: inherit;
+	}
+	.good-answer {
+		text-align: center;
+		font-size: 1.25rem;
+		margin-top: 1.5rem;
+		font-weight: bold;
+		visibility: hidden;
+
+		&.show {
+			visibility: visible;
+		}
+	}
+	.next-player {
+		font-size: 1.5rem;
+		text-align: center;
+		margin-top: 2rem;
+	}
+	.button-cta-accent {
+		margin-top: 2rem;
+	}
+}
+
+.form {
+	margin-top: 2rem;
+}
+select {
+	background: $color-secondary;
+	color: $color-accent;
+	font-size: 0.75em;
+	border: none;
+	padding: 0.25em 0.5em;
+	border-radius: 4px;
+
+	&:focus {
+		outline: none;
 	}
 }
