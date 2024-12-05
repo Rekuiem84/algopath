@@ -1,51 +1,247 @@
 {
 	"easyQuestions": [
 		{
-			"question": "Quelle est la capitale de la France ?",
-			"answers": ["Paris", "Londres", "Berlin", "Madrid"],
-			"correctAnswer": "Paris"
+			"question": "What is the \"worst-case scenario\" (O) in algorithms?",
+			"answers": [
+				"The maximum number of steps an algorithm could take to complete, given the worst possible input",
+				"The efficiency of an algorithm when given random inputs",
+				"The average number of steps an algorithm takes to complete across all inputs",
+				"The fastest an algorithm can complete its task, given the best possible input"
+			],
+			"correctAnswer": "The maximum number of steps an algorithm could take to complete, given the worst possible input"
 		},
 		{
-			"question": "Combien font 2 + 2 ?",
-			"answers": ["3", "4", "5", "6"],
-			"correctAnswer": "4"
+			"question": "What is a characteristic of greedy algorithms?",
+			"answers": [
+				"They explore all possible solutions before choosing the best one",
+				"They rely on dynamic programming to solve complex problems",
+				"They always guarantee the best solution in every scenario",
+				"They make the locally optimal choice at each step, aiming for a globally optimal solution"
+			],
+			"correctAnswer": "They make the locally optimal choice at each step, aiming for a globally optimal solution"
 		},
 		{
-			"question": "Quelle est la couleur du ciel par temps clair ?",
-			"answers": ["Rouge", "Bleu", "Vert", "Jaune"],
-			"correctAnswer": "Bleu"
+			"question": "What is the purpose of \"Divide and Conquer\" algorithms?",
+			"answers": [
+				"To prioritize the most significant part of a problem and ignore smaller details",
+				"To try every possible solution and pick the best one",
+				"To break a problem into smaller sub-problems, and solve them individually",
+				"To divide tasks among multiple algorithms running in parallel for faster processing"
+			],
+			"correctAnswer": "To break a problem into smaller sub-problems, and solve them individually"
 		},
 		{
-			"question": "Quel est le plus grand océan du monde ?",
-			"answers": ["Atlantique", "Pacifique", "Indien", "Arctique"],
-			"correctAnswer": "Pacifique"
+			"question": "What type of structure is a stack?",
+			"answers": [
+				"A linear data structure that follows the First In, First Out (FIFO) principle",
+				"A hierarchical data structure used to represent parent-child relationships",
+				"A linear data structure that follows the Last In, First Out (LIFO) principle",
+				"A dynamic graph-based structure used for storing key-value pairs"
+			],
+			"correctAnswer": "A linear data structure that follows the Last In, First Out (LIFO) principle"
 		},
 		{
-			"question": "Quel est le plus petit nombre premier ?",
-			"answers": ["0", "1", "2", "3"],
-			"correctAnswer": "2"
+			"question": "What is the key principle of \"Merge Sort?\"?",
+			"answers": [
+				"Sorting by repeatedly partitioning the array around a pivot",
+				"Sorting by making the locally optimal choice at each step",
+				"Sorting by dividing the array into smaller subarrays, sorting them, and merging them back together",
+				"Sorting by iterating through the array and swapping adjacent elements if they are in the wrong order"
+			],
+			"correctAnswer": "Sorting by dividing the array into smaller subarrays, sorting them, and merging them back together"
+		},
+		{
+			"question": "Which data structure operates on a FIFO principle?",
+			"answers": ["Queue", "Stack", "Binary Tree", "Hash Table"],
+			"correctAnswer": "Queue"
+		},
+		{
+			"question": "What does the \"spatial complexity\" of an algorithm refer to?",
+			"answers": [
+				"The amount of memory an algorithm uses as it runs",
+				"The time an algorithm takes to execute",
+				"The efficiency of an algorithm when processing large datasets",
+				"The structure of the data used by the algorithm"
+			],
+			"correctAnswer": "The amount of memory an algorithm uses as it runs"
+		},
+		{
+			"question": "What is the time complexity of accessing an element in an array?",
+			"answers": ["O(1)", "O(n)", "O(log n)", "O(n²)"],
+			"correctAnswer": "O(1)"
+		},
+		{
+			"question": "What is the purpose of an algorithm’s time complexity?",
+			"answers": [
+				"To describe how the algorithm uses memory",
+				"To measure how fast the algorithm runs as the input size grows",
+				"To calculate how many elements an algorithm can process",
+				"To determine the minimum number of steps an algorithm takes"
+			],
+			"correctAnswer": "To measure how fast the algorithm runs as the input size grows"
+		},
+		{
+			"question": "What type of algorithm is used to find the shortest path between two nodes in a graph?",
+			"answers": [
+				"Dijkstra’s Algorithm",
+				"Quicksort",
+				"Merge Sort",
+				"Binary Search"
+			],
+			"correctAnswer": "Dijkstra’s Algorithm"
+		},
+		{
+			"question": "What is a characteristic of a recursive algorithm?",
+			"answers": [
+				"It solves problems in a linear sequence",
+				"It solves problems by breaking them down into smaller, identical sub-problems",
+				"It requires the algorithm to run iteratively",
+				"It always produces the fastest solution"
+			],
+			"correctAnswer": "It solves problems by breaking them down into smaller, identical sub-problems"
+		},
+		{
+			"question": "Which is an example of a non-linear data structure?",
+			"answers": ["Linked List", "Binary Tree", "Queue", "Stack"],
+			"correctAnswer": "Binary Tree"
 		}
 	],
 	"hardQuestions": [
 		{
-			"question": "Quel est le nombre d'or ?",
-			"correctAnswer": "1.618"
+			"question": "Who wrote the play \"Hamlet\"?",
+			"correctAnswer": "William Shakespeare"
 		},
 		{
-			"question": "Quelle est la théorie de la relativité restreinte ?",
-			"correctAnswer": "E = mc^2"
+			"question": "What is the chemical symbol for gold?",
+			"correctAnswer": "Au"
 		},
 		{
-			"question": "Quel est le plus grand nombre premier connu ?",
-			"correctAnswer": "2^82589933-1"
+			"question": "What year did the Titanic sink?",
+			"correctAnswer": "1912"
 		},
 		{
-			"question": "Quelle est la signification de la dualité onde-particule ?",
-			"correctAnswer": "Toutes les réponses sont correctes"
+			"question": "Who developed the theory of general relativity?",
+			"correctAnswer": "Albert Einstein"
 		},
 		{
-			"question": "Qu'est-ce que la conjecture de Poincaré ?",
-			"correctAnswer": "Toute variété simplement connexe de dimension 3 est homéomorphe à une sphère"
+			"question": "What is the largest planet in our solar system?",
+			"correctAnswer": "Jupiter"
+		},
+		{
+			"question": "Which element has the atomic number 1?",
+			"correctAnswer": "Hydrogen"
+		},
+		{
+			"question": "What is the capital city of Canada?",
+			"correctAnswer": "Ottawa"
+		},
+		{
+			"question": "Who is known as the \"father of modern physics\"?",
+			"correctAnswer": "Isaac Newton"
+		},
+		{
+			"question": "What is the longest river in the world?",
+			"correctAnswer": "The Nile River"
+		},
+		{
+			"question": "Who was the first emperor of China?",
+			"correctAnswer": "Qin Shi Huang"
+		},
+		{
+			"question": "In what year did the Berlin Wall fall?",
+			"correctAnswer": "1989"
+		},
+		{
+			"question": "Who was the leader of the Soviet Union during the Cuban Missile Crisis?",
+			"correctAnswer": "Nikita Khrushchev"
+		},
+		{
+			"question": "What is the capital of Australia?",
+			"correctAnswer": "Canberra"
+		},
+		{
+			"question": "What city used to be the capital of Japan?",
+			"correctAnswer": "Kyoto"
+		},
+		{
+			"question": "What is the capital of Brazil?",
+			"correctAnswer": "Brasília"
+		},
+		{
+			"question": "What is the only mammal capable of true flight?",
+			"correctAnswer": "Bat"
+		},
+		{
+			"question": "Which mammals are known for laying eggs?",
+			"correctAnswer": "Platypus and some Echidnas"
+		},
+		{
+			"question": "Who wrote the novel '1984'?",
+			"correctAnswer": "George Orwell"
+		},
+		{
+			"question": "What is the largest desert on Earth?",
+			"correctAnswer": "Antarctica"
+		},
+		{
+			"question": "Which manga features a character named Monkey D. Luffy?",
+			"correctAnswer": "One Piece"
+		},
+		{
+			"question": "Which video game character is known for having no arms and legs?",
+			"correctAnswer": "Rayman"
+		},
+		{
+			"question": "Name at least five of the seven dwarfs from Snow White.",
+			"correctAnswer": "Doc, Grumpy, Happy, Sleepy, Bashful, Sneezy, Dopey"
+		},
+		{
+			"question": "Which video game series features the character 'Master Chief'?",
+			"correctAnswer": "Halo"
+		},
+		{
+			"question": "In what game do players build and explore a blocky 3D world?",
+			"correctAnswer": "Minecraft"
+		},
+		{
+			"question": "In which video game would you find the character 'Link'?",
+			"correctAnswer": "The Legend of Zelda"
+		},
+		{
+			"question": "Name three Mario Kart items.",
+			"correctAnswer": "Mushroom, Banana, Star, Bullet Bill, Lightning, Blue Shell, Red Shell, Green Shell"
+		},
+		{
+			"question": "Which animal’s fingerprints are almost identical to human fingerprints?",
+			"correctAnswer": "Koala"
+		},
+		{
+			"question": "What is the only fruit that has its seeds on the outside?",
+			"correctAnswer": "Strawberry"
+		},
+		{
+			"question": "Which insect can live for weeks without its head?",
+			"correctAnswer": "Cockroach"
+		},
+		{
+			"question": "Which animal has the longest tongue in proportion to its body?",
+			"correctAnswer": "Chameleon"
+		},
+		{
+			"question": "Which planet has the most volcanoes in our solar system?",
+			"correctAnswer": "Venus"
+		},
+		{
+			"question": "What is the only bird that can fly backward?",
+			"correctAnswer": "Hummingbird"
+		},
+		{
+			"question": "Which animals’s blood is blue due to the copper-based molecule it uses to carry oxygen?",
+			"correctAnswer": "Octopuses and horseshoe crabs"
+		},
+		{
+			"question": "Which microscopic animal is known to survive extreme conditions, including outer space?",
+			"correctAnswer": "Tardigrades"
 		}
 	]
 }
