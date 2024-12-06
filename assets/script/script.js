@@ -15,9 +15,10 @@ form.addEventListener("submit", (e) => {
 		renderPlayers();
 		nameInput.value = "";
 		console.log(JSON.parse(localStorage.getItem("players")));
-	}
-	if (players.length > 0) {
-		playLink.setAttribute("href", "/play");
+
+		if (players.length > 0) {
+			playLink.setAttribute("href", "/play");
+		}
 	}
 });
 
@@ -50,5 +51,8 @@ window.addEventListener("DOMContentLoaded", () => {
 	if (localStorage.getItem("players")) {
 		players.push(...JSON.parse(localStorage.getItem("players")));
 		renderPlayers();
+	}
+	if (players.length > 0) {
+		playLink.setAttribute("href", "/play");
 	}
 });
